@@ -5,7 +5,7 @@ function myfunc() {
     let text = '';
     if (value === 'name') {
         document.write('<img src=""')
-        text = '舟見 朋夜  29歳  ';
+        text = '舟見 朋夜 ';
     } else if (value === 'from') {
         document.write('<img src="/assets/img/IMG_6348.JPG">')
         text = '富山県';
