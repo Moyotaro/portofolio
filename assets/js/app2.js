@@ -1,25 +1,4 @@
 
-function myfunc() {
-    let value = document.getElementById("myselectbox").value;
-    let target = document.getElementById("target");
-    let text = '';
-    if (value === 'name') {
-        document.write('<img src=""')
-        text = '舟見 朋夜 ';
-    } else if (value === 'from') {
-        document.write('<img src="/assets/img/IMG_6348.JPG">')
-        text = '富山県';
-    } else if (value === 'hobby') {
-        text = 'ロックフェス・ライブ , マンガ・アニメ';
-    } else if (value === 'career') {
-        text = '栄養士歴７年, 新米狩りガール';
-    } else if (value == 'github')
-        text = 'Moyotaro'
-    target.innerHTML = text;
-}
-
-
-
 
 $(function() { 
 

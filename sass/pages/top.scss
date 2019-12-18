@@ -1,0 +1,38 @@
+// toppage.html
+.top {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/img/CAT_JAVASCRIPT.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
+}
+.t {
+  font-size: 25em;
+  position: relative;
+  color: whitesmoke;
+  font-weight: 900;
+  font-family: "Odibee Sans", cursive;
+}
+.f {
+  font-size: 25em;
+  position: relative;
+  color: white;
+  font-weight: 900;
+  font-family: "Odibee Sans", cursive;
+}
+
+.name {
+  font-size: 7em;
+  font-family: "Niconne", cursive;
+  position: absolute;
+  top: 60%;
+  left: 48%;
+}

@@ -1,0 +1,52 @@
+// 全ページ共通(・Д・)ノ
+
+.nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav li {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.main {
+  margin: 20px;
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: var(--grey);
+  background-color: var(--black-blue);
+  overflow-x: hidden;
+  letter-spacing: 0.2px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body.light {
+  color: var(--black-light);
+}
+
+body.light {
+  background-color: var(--white);
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+// commonとsettingsいい画に反映されないんやけど…
+// 明日池さんに聞こ_(:3 」∠)_
