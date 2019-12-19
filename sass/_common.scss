@@ -25,7 +25,6 @@ body {
   background-color: var(--black-blue);
   overflow-x: hidden;
   letter-spacing: 0.2px;
-  -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -43,10 +42,8 @@ body.light {
   position: relative;
   width: 100%;
   display: block;
-  overflow: hidden;
-  height: 100vh;
+  // overflow: hidden;
+  height: auto;
+
 }
 
-
-// commonとsettingsいい画に反映されないんやけど…
-// 明日池さんに聞こ_(:3 」∠)_

@@ -14,5 +14,6 @@
         "statusBarItem.hoverBackground": "#7f40bf",
         "statusBar.foreground": "#e7e7e7"
     },
-    "peacock.color": "#639"
+    "peacock.color": "#639",
+    "liveServer.settings.port": 5502
 }

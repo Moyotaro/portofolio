@@ -7,20 +7,6 @@ $('.placeholder').on('click', function (ev) {
   $('.list_ul').toggle();
 });
 
-//  $('.list_ul a').on('click', function (ev) {
-//    ev.preventDefault();
-//    let index = $(this).parent().index();
-   
-//    $('.placeholder').text( $(this).text() ).css('opacity', '1');
-   
-//    console.log($('.list_ul').find('li').eq(index).html());
-   
-//    $('.list_ul').find('li').eq(index).prependTo('.list_ul');
-//    $('.list_ul').toggle();   
-   
-//  });
-
-
 $('select').on('change', function (e) {
   
   // Set text on placeholder hidden element
@@ -37,7 +23,7 @@ $('select').on('change', function (e) {
 
 $(function() { 
 
-    //Switch dark/light
+    //スイッチ。暗いバージョンと明るいバージョン
     
     $(".switch").on('click', function () {
         if ($("body").hasClass("light")) {
@@ -52,7 +38,7 @@ $(function() {
         
     $(document).ready(function(){
     
-        //Scroll back to top
+        // topまでスクロール
         
         let progressPath = document.querySelector('.progress-wrap path');
         let pathLength = progressPath.getTotalLength();
@@ -87,4 +73,4 @@ $(function() {
         
     });
     
-});//(jQuery); 
+});(jQuery); 
