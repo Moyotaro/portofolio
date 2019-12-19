@@ -6,59 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo3</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/demo.css">
 </head>
 
 <!-- info pulled from http://10mosttoday.com/10-most-beautiful-forests-in-the-world/ -->
 
 <body ng-app='app' ng-controller='MainController'>
-    <main id='main'>
-        <section id='one'>
-            <div class='pane' ng-repeat='profile in profiles track by $index' ng-if="$index == active">
-                <main>
-                    <h1 ng-style="{'background-image' : 'url(' + profile.img + ')'}">{{ profile.rank }}</h1>
-                </main>
-                <div class="bg" ng-style="{'background-image' : 'url(' + profile.img + ')'}"></div>
-            </div>
-        </section>
-        <section id='two'>
-            <div class='pane' ng-repeat='profile in profiles track by $index' ng-class="{ 'active' : $index == active }"
-                ng-if="$index == active">
-                <main>
-                    <h2>{{ profile.name }}</h2>
-                    <p>{{ profile.desc }}</p>
-                    <p class='sub'>{{ profile.location }}</p>
-                </main>
-            </div>
-        </section>
-    </main>
-    <nav id='nav'>
-        <ul>
-            <li class="previous" ng-show="active > 0">
-                <a href='#' ng-click="previous()">
-                    <span class='icon icon_arrow-left'>←</span>
-                </a>
-            </li>
-            <li class='numbers'>
-                <a href='#' ng-repeat="profile in profiles track by $index" ng-click="setActive($index)"
-                    ng-class="{'active' : $index == active}">
-                    {{ $index + 1 }}
-                </a>
-            </li>
-            <li class="next" ng-show="active + 1  profiles.length">
-                <a href='#' ng-click="next()">
-                    <span class='icon icon_arrow-right'>→</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div id="preloader">
+    <div class="container">
+        <header class="nav">
+            <ul>
+                <li><a href="/top.html">Top</a></li>
+                <li><a href="/profile.html">profile</a></li>
+                <li><a href="/portfolio.html">portofolio</a></li>
+                <li><a href="/vision.html">vision</a></li>
+            </ul>
+        </header>
+        <main id='main'>
+            <section id='one'>
+                <div class='pane' ng-repeat='profile in profiles track by $index' ng-if="$index == active">
+                    <main>
+                        <h1 ng-style="{'background-image' : 'url(' + profile.img + ')'}">{{ profile.rank }}</h1>
+                    </main>
+                    <div class="bg" ng-style="{'background-image' : 'url(' + profile.img + ')'}"></div>
+                </div>
+            </section>
+            <section id='two'>
+                <div class='pane' ng-repeat='profile in profiles track by $index'
+                    ng-class="{ 'active' : $index == active }" ng-if="$index == active">
+                    <main>
+                        <h2>{{ profile.name }}</h2>
+                        <p>{{ profile.desc }}</p>
+                        <p class='sub'>{{ profile.location }}</p>
+                    </main>
+                </div>
+            </section>
+        </main>
+        <nav id='nav'>
+            <ul>
+                <li class="previous" ng-show="active > 0">
+                    <a href='#' ng-click="previous()">
+                        <span class='icon icon_arrow-left'>←</span>
+                    </a>
+                </li>
+                <li class='numbers'>
+                    <a href='#' ng-repeat="profile in profiles track by $index" ng-click="setActive($index)"
+                        ng-class="{'active' : $index == active}">
+                        {{ $index + 1 }}
+                    </a>
+                </li>
+                <li class="next" ng-show="active + 1  profiles.length">
+                    <a href='#' ng-click="next()">
+                        <span class='icon icon_arrow-right'>→</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="preloader">
 
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
     <script src="https://cdn.rawgit.com/chieffancypants/angular-hotkeys/master/build/hotkeys.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-animate.js"></script>
-    <script src="/assets/js/app3.js"></script>
+    <script src="/assets/js/profile.js"></script>
 </body>
 
 </html>

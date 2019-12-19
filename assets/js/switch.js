@@ -1,3 +1,38 @@
+console.clear();
+
+let el = {};
+
+$('.placeholder').on('click', function (ev) {
+  $('.placeholder').css('opacity', '0');
+  $('.list_ul').toggle();
+});
+
+//  $('.list_ul a').on('click', function (ev) {
+//    ev.preventDefault();
+//    let index = $(this).parent().index();
+   
+//    $('.placeholder').text( $(this).text() ).css('opacity', '1');
+   
+//    console.log($('.list_ul').find('li').eq(index).html());
+   
+//    $('.list_ul').find('li').eq(index).prependTo('.list_ul');
+//    $('.list_ul').toggle();   
+   
+//  });
+
+
+$('select').on('change', function (e) {
+  
+  // Set text on placeholder hidden element
+  $('.placeholder').text(this.value);
+  
+  // Animate select width as placeholder
+  $(this).animate({width: $('.placeholder').width() + 'px' });
+  
+});
+
+
+
 
 
 $(function() { 
@@ -52,4 +87,4 @@ $(function() {
         
     });
     
-})(jQuery); 
+});//(jQuery); 

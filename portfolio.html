@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style2.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/portfolio.css">
     <title>ぽーとふぉりお</title>
 </head>
@@ -58,7 +58,28 @@
                         <div class="portfolio_slideContent">
                             <h4></h4>
                             <h3></h3>
-                            <a class="button" href="" target="/black">MENU</a>
+                            <!-- <a class="button" href="" target="/black">MENU</a> -->
+                        <!-- メニューバーなんか作ろ(´-ω-`) -->
+
+                            <!-- メニューバーガー -->
+                            <div id="burger">
+                                <div id="menu_button">
+                                    <input type="checkbox" id="menu_checkbox">
+                                    <label for="menu_checkbox" id="menu_label" class="active">
+                                        <div id="menu_text_bar"></div>
+                                    </label>
+                                </div>
+                                <!-- navtab -->
+                                <nav class="nav">
+                                    <ul class="nav_menu">
+                                        <li class="nav_item"><a href="top.html">Top</a></li>
+                                        <li class="nav_item"><a href="/profile.html">profile</a></li>
+                                        <li class="nav_item"><a href="/portfolio.html">portofolio</a></li>
+                                        <li class="nav_item"><a href="/vision.html">vision</a></li>
+                                    </ul>
+                                </nav>
+
+                            </div>
                         </div>
                     </div>
 
@@ -79,13 +100,14 @@
                             <h4>4つめ</h4>
                             <h3>4つめ</h3>
                         </div> -->
-                        <!-- メニューバーなんか作ろ(´-ω-`) -->
-                    </div> 
+                  
+                    </div>
                 </div>
             </div>
         </main>
     </div>
-    <!-- <script src="app3.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/assets/js/portfolio.js"></script>
 </body>
 
 </html>

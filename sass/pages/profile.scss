@@ -1,32 +1,4 @@
-:root {
-  --red: #da2c4d;
-  --yellow: #f8ab37;
-  --green: #2ecc71;
-  --white: #ffffff;
-  --grey-light: #f2f7f9;
-  --grey: #ecedf3;
-  --black: #080808;
-  --black-blue: #1f2029;
-  --black-blue-light: #353746;
-  --black-blue-light-2: #404255;
-  --black-blue-light-3: #4b4d64;
-  --black-light: #424455;
-}
-
-.nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-}
-.nav li {
-  margin: 10px;
-  font-size: 30px;
-}
-
-.main {
-  margin: 20px;
-}
+@import '../base/settings';
 
 body {
   font-family: "Raleway", sans-serif;
@@ -56,7 +28,7 @@ body.light {
   width: 100%;
   display: block;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
 }
 
 // ぷろぐれす
@@ -259,11 +231,10 @@ body.light .progress-wrap svg.progress-circle path {
 .container {
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  height: auto;
   line-height: 1.75;
 }
-h1,
-h2 {
+h1,h2 {
   display: inline-block;
 }
 .let {
@@ -275,18 +246,107 @@ h2 {
 .atai {
   color: #c26129;
 }
+
 .console {
   color: #36d673;
+  font-size: 50px;
+  
 }
 .log {
   color: #dfd43f;
-  margin: 0;
+  font-size: 50px;
+
 }
 .profile {
   font-size: 55px;
   margin-left: 10%;
 }
-h2 {
-  font-size: 45px;
-  margin-left: 10%;
+
+
+
+
+
+.typo, .list a {
+  font-size: 60px;
+  font-weight: 700;
+  color: #585858;
+  line-height: 1;
+  // text-decoration: underline wavy #c26129;
+}
+
+
+.list {
+  display: inline-block;
+  position: relative;
+  margin-left: 6px;
+}
+.list ul {
+  text-align: left;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.list ul .active {
+  display: block;
+}
+.list li {
+  list-style: none;
+}
+.list li:first-child a {
+  color: #c26129;
+}
+.list a {
+  color: #c26129;
+  // position: relative;
+}
+.list a:after {
+  // position: absolute;
+  content: '';
+  height: 5px;
+  width: 0;
+  left: 0;
+  // background: #c26129;
+  // text-decoration: underline wavy #c26129;
+  // bottom: 0;
+  // transition: .7s ease-out all;
+}
+.list a:hover {
+  cursor: pointer;
+  color: #c26129;
+}
+.list a:hover:after {
+  width: 100%;
+}
+
+.placeholder {
+  cursor: pointer;
+}
+.placeholder:hover {
+  color: #888888;
+}
+
+
+
+// 波線
+.wave {
+  width: 185px;
+  position:relative;
+   z-index:1;
+   font-size:50px;
+}
+.wave::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  // bottom: -1rem;
+  width: 0;
+  height: 2em;
+  background: url(/assets/img/wave.jpg) repeat-x right center / auto 100%;
+  transition: width .3s;
+}
+.wave:hover::before {
+  width: 100%;
 }

@@ -1,15 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
 // import { url } from "inspector";
 
 angular.module('app', ['cfp.hotkeys', 'ngAnimate'])
