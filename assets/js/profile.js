@@ -25,35 +25,35 @@ angular.module('app', ['cfp.hotkeys', 'ngAnimate'])
                 'name': '舟見 朋夜',
                 'desc': '法政大学 経営学部 中退からの富山短期大学 栄養学科へ。フィーリングとノリで今日も笑って過ごします。',
                 'location': '',
-                'img': './assets/img/profile.jpg',
+                'img': './assets/img/profile.jpeg',
             },
             {
                 'rank': 2,
-                'name': '千葉県船橋市生まれ市川市育ちからの富山県',
+                'name': '千葉県船橋市に生まれ市川市で育ってからの富山県',
                 'desc': '知らない人が多すぎる富山県は、地震も台風もなぜか逸れて震災と無縁の県です。',
-                'location': '「君の名は」の糸守湖のモデルになったみくりが池（立山）',
-                'img': './assets/img/mikurigaike.JPG'
+                'location': '「君の名は」の糸守湖のモデルになった みくりが池  冬バージョン。',
+                'img': './assets/img/mikurigaike.jpeg',
             },
             {
                 'rank': 3,
                 'name': '趣味',
                 'desc': 'ロックフェス、ライブ。 漫画とアニメで世界は平和になると思う。',
                 'location': '2019年最後の夏フェス。Auguest 10 ROCK IN JAPN FES.',
-                'img': './assets/img/rockinjapan.jpeg'
+                'img': './assets/img/rockinjapan.jpeg',
             },
             {
                 'rank': 4,
                 'name': 'キャリア',
                 'desc': '病院メインの栄養士。ときどき狩りガール',
                 'location': 'NST会議中',
-                'img': './assets/img/nst.JPG'
+                'img': './assets/img/nst.JPG',
             },
             {
                 'rank': 5,
-                'name': 'github,netlify',
-                'desc': '',
+                'name': 'スキル',
+                'desc': 'HTML5, CSS3, JavaScript, jQuery, PHP, WordPress, AngularJSは勉強中。',
                 'location': '',
-                'img': './assets/img/github.png'
+                'img': './assets/img/github.png',
             }
         ];
 

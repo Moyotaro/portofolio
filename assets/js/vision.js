@@ -1,12 +1,12 @@
 $(function () {
 
-    var $container = $('#ib-container'),
+    let $container = $('#ib-container'),
         $articles = $container.children('article'),
         timeout;
 
     $articles.on('mouseenter', function (event) {
 
-        var $article = $(this);
+        let $article = $(this);
         clearTimeout(timeout);
         timeout = setTimeout(function () {
 
@@ -28,6 +28,9 @@ $(function () {
     });
 
 });
+
+
+
 
 
 ; window.Modernizr = function (a, b, c) {

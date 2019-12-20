@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo3</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/demo.css">
 </head>
 
 <!-- info pulled from http://10mosttoday.com/10-most-beautiful-forests-in-the-world/ -->
 
 <body ng-app='app' ng-controller='MainController'>
+    <header class="nav">
+        <ul>
+            <li><a href="/top.html">Top</a></li>
+            <li><a href="/demo.html">profile</a></li>
+            <li><a href="/portfolio.html">portfolio</a></li>
+            <li><a href="/vision.html">vision</a></li>
+        </ul>
+    </header>
     <main id='main'>
         <section id='one'>
             <div class='pane' ng-repeat='profile in profiles track by $index' ng-if="$index == active">

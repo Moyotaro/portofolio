@@ -232,13 +232,12 @@ h1,h2 {
 
 .console {
   color: #36d673;
-  font-size: 50px;
+  font-size: 65px;
   
 }
 .log {
   color: #dfd43f;
-  font-size: 50px;
-
+  font-size: 60px;
 }
 .profile {
   font-size: 60px;
@@ -251,8 +250,8 @@ h1,h2 {
 
 .typo, .list a {
   font-size: 70px;
-  font-weight: 700;
-  color: #585858;
+  font-weight: 500;
+  color: white;
   line-height: 1;
   // text-decoration: underline wavy #c26129;
 }
@@ -327,7 +326,7 @@ h1,h2 {
   // bottom: -1rem;
   width: 0;
   height: 2em;
-  background: url(/assets/img/wave.jpg) repeat-x right center / auto 100%;
+  // background: url(/assets/img/wave.jpeg) repeat-x right center / auto 100%;
   transition: width .3s;
 }
 .wave:hover::before {
